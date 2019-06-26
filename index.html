@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+ <!-- main css -->
+ <link rel="stylesheet" href="css/style.css">
+ 
+ <title>budget app</title>
+ <style>
+ </style>
+</head>
+
+<body>
+    <div class="wrapper"></div>
+
+   
+    <header>
+        <!-- title -->
+        <h1>budget app</h1>
+    </header>
+        <main class="main__container">
+         
+                
+           
+            <div class="main__budget">
+                    <!-- budget feedback -->
+                      <div class="budget-feedback">budget feedback</div>
+                    <!-- budget form -->
+                          <form  class="budget-form">
+                          <h2>your budget</h2>
+                       <label for="budget" aria-label="hidden"></label>
+                              <input type="number" name="budget" class="budget-input" placeholder="enter your budget">
+                         
+                          <!-- submit button -->
+                          <button type="submit" class="budget-submit-btn" id="budget-submit">calculate</button>
+                          </form>
+                  <!-- END budget form --> 
+                      </div>
+
+                                         <!-- START CONTAINER EXPENSE FORM -->
+                  <div class="container__expense-form">
+                        <!-- expense feedback -->
+                        <div class="expense-feedback">expense feedback</div>
+                          <!-- expense form -->
+                          <form class="expense-form">
+                              <h2>your expenses</h2>
+                              <label for="expense-title" aria-label="hidden"></label>
+                              <input type="text" name="expense-title"  id="expense-input" placeholder="enter expense title"/>
+                        
+                              <label for="expense-amount" aria-label="hidden"></label>
+                              <input type="number" name="expense-amount" id="amount-input" placeholder="enter your expense amount"/>
+                      
+                               <!-- submit button -->
+                              <button type="submit" class="expense-submit" id="expense-submit">add expense</button>
+                          </form>
+                       </div>
+                
+                         <!-- END CONTAINER EXPENSE FORM -->   
+                         
+                  <!-- START app info review__situation -->
+                   
+                            <div class="review__situation">
+                                    <div class="budget__case">
+                                        <h3 class="info-title">budget</h3>
+                                        <span class="budget-icon"><i class="fas fa-money-bill-alt"></i></span>
+                                        <h4 class="budget"><span>£</span><span id="budget-amount">0</span></h4>
+                                    </div>
+                                 
+                                    <div class="expense__case">     
+                                        <h3 class="info-title">expenses</h3>
+                                        <span class="expense-icon"><i class="far fa-credit-card"></i></span>
+                                        <h4 class="expense"><span>£ </span><span id="expense-amount">0</span></h4>
+                                    </div>
+                                  
+                                   <div class="balance__case">
+                                       <h3 class="info-title">balance</h3>
+                                       <span class="balance-icon"><i class="fas fa-pound-sign"></i></span>
+                                       <h4 class="balance"> <span>£ </span><span id="balance-amount">0</span></h4>
+                                   </div>
+                                </div>
+                             <!-- END app info review__situation -->
+                        
+                          
+          
+                           
+                              <!-- expense list -->
+                              
+                                  <div class="expense-list">
+                                  <div class="expense-list__info">
+                                      <h3 class="list-item">expense</h3>
+                                      <h3 class="list-item">value</h3>
+                                      <h3 class="list-item"></h3>
+                                  </div>
+                                  </div>
+          
+                        
+                             <!-- end expense list --> 
+                           
+    </main>
+
+                   
+
+</div>
+
+ <!-- script js -->
+ <script src="js/main.js"></script>
+</body>
+
+</html>
